@@ -41,33 +41,6 @@ def array_of_phonemes(word)
   phoneme_array
 end
 
-# ʌnkɑrˈtund
-# ˈvɪktərɪləs
-# ˌɛkjuˈmɛnɪkəl
-# səˈtɪrəkəli
-# ˈɪʃuɪŋ
-# prɪˈpɛrəˌtɔri
-# ˌwægˈnɛriənɪz(ə)m
-
-# lu
-# bɛs
-# ˈseɪlˌfɪʃ
-# vɛnˈtrɪkjulər
-# ˌprɛʤəˈdɪʃəli
-# ˈspɪnəbl
-# ʌnˈbroʊk
-# səˈfaɪsər
-# ʌndɪˈʤɛnəˌreɪtɪd
-# ˌprɛzəˈdɛnʧəl
-# ɪˈsɛnʃəlɪz(ə)m
-# ˈmɑrˌgreɪv
-# ˈkwɛsʧənəbəli
-# ˈaʊˌtwɪt
-# ˈkɔrə
-# kənˈvɪnst
-# ˈlaɪf(ə)l
-# ˈkʌlɜrfəl
-
 get "/" do
   word = random_word
   # all_words << random_word

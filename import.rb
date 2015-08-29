@@ -19,6 +19,6 @@ end
 
 db_connection do |conn|
   CSV.foreach('phonemes.csv', headers: true, header_converters: :symbol) do |row|
-    conn.exec_params("INSERT INTO phonemes (symbol) VALUES ($1)", [row[:symbol]])
+    conn.exec_params("INSERT INTO phonemes (symbol, category, place, manner, voiced) VALUES ($1, $2, $3, $4, $5)", [row[:symbol], row[:category], row[:place], row[:manner], row[:voiced]])
   end
 end

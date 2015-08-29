@@ -5,14 +5,16 @@ CREATE TABLE words (
   english varchar(100) NOT NULL,
   phonetic varchar(100) NOT NULL,
   difficulty_level int,
-  caterogry varchar(100)
+  category varchar(100)
 );
 
 CREATE TABLE phonemes (
   id SERIAL PRIMARY KEY,
   symbol varchar(100),
+  category varchar(100),
   place varchar(100),
-  method varchar(100)
+  manner varchar(100),
+  voiced varchar(100)
 )
 
 -- CREATE TABLE phonetic_link (
