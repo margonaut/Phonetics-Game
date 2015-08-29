@@ -1,11 +1,15 @@
-<p>Here we go!</p>
+<div class="row word-row">
+  <div class="small-12 medium-6 center columns">
+    <h1 class="main-word"><%= word[:english] %></h1>
+  </div>
+  <div class="small-12 medium-6 columns">
+    <h1 class="main-word">[<% phonemes.each do |character| %><span class="phoneme"><%= character["symbol"] %></span><% end %>]</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 medium-6 columns"> aads fasf <dd>sdf asdf asdf asdf adsfadsf ad fadfs </dd></div>
+  <div class="small-12 medium-6 columns">sdfasfd asdf adsf adf asdfasfd adsf</div>
+</div>
 
-<h1><%= word[:english] %>
-
-[<% phonemes.each do |character| %><span class="phoneme"><%= character["symbol"] %></span><% end %>]</h1>
 
 <p><a href="/">New word</a></p>
-
-
-
-http://www2.sharonherald.com/herald/nie/spellb/spelllist2.html

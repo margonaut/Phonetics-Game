@@ -4,7 +4,7 @@ CREATE TABLE words (
   id SERIAL PRIMARY KEY,
   english varchar(100) NOT NULL,
   phonetic varchar(100) NOT NULL,
-  difficulty_level int,
+  difficulty int,
   category varchar(100)
 );
 
@@ -27,3 +27,5 @@ CREATE TABLE phonemes (
 -- JOIN phonetic_link ON words.id = phonetic_link.word_id
 -- JOIN phonemes ON phonemes.id = phonetic_link.phoneme_id
 -- WHERE words.id = $1
+-- http://www2.sharonherald.com/herald/nie/spellb/spelllist2.html
+--
