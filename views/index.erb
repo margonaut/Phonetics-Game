@@ -1,15 +1,24 @@
 <div class="row word-row">
-  <div class="small-12 medium-6 center columns">
+  <div class="text-center columns">
     <h1 class="main-word"><%= word[:english] %></h1>
   </div>
-  <div class="small-12 medium-6 columns">
-    <h1 class="main-word">[<% phonemes.each do |character| %><span class="phoneme"><%= character["symbol"] %></span><% end %>]</h1>
+  <div class="text-center columns">
+    <h1 class="main-word">
+      [<% phonemes.each_with_index do |character, index| %><a href="#" class="phoneme text-left" data-dropdown="phoneme-info<%= index %>" data-options="is_hover:true; hover_timeout:900400"><%= character["symbol"] %></a><ul id="phoneme-info<%= index %>" class="f-dropdown phoneme-info content" data-dropdown-content>
+        <li><a href="#"><strong>Category:</strong> <%= character["category"].capitalize%></a></li>
+        <li><a href="#"><strong>Place:</strong> <%= character["place"].capitalize%></a></li>
+        <li><a href="#"><strong>Manner:</strong> <%= character["manner"].capitalize%></a></li>
+      </ul><% end %>]</h1>
   </div>
 </div>
-<div class="row">
-  <div class="small-12 medium-6 columns"> aads fasf <dd>sdf asdf asdf asdf adsfadsf ad fadfs </dd></div>
-  <div class="small-12 medium-6 columns">sdfasfd asdf adsf adf asdfasfd adsf</div>
-</div>
+<!-- <div class="row">
+  <div class="small-12 medium-6 columns">
+    Phoneme Info
+    <p>Category: <%= phonemes[1]["category"]%></p>
+    <p></p>
+    <p>Manner: <%= phonemes[1]["manner"]%></p>
 
+  </div> -->
+</div>
 
 <p><a href="/">New word</a></p>

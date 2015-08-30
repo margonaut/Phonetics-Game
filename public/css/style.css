@@ -1,6 +1,27 @@
+.phoneme {
+  color: #000;
+  cursor: crosshair;
+}
+
 .phoneme:hover {
   color: grey;
   cursor: crosshair;
+}
+
+.f-dropdown li a {
+  text-align: left;
+}
+
+.f-dropdown.content {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.f-dropdown:before {
+}
+
+.f-dropdown:before {
+  border-color:transparent transparent rgba(255, 255, 255, 0.75) transparent;
 }
 
 body {
