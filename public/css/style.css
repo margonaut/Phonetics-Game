@@ -1,16 +1,17 @@
 .phoneme {
-  color: #000;
+  color: #FFF;
   cursor: crosshair;
 }
 
 .phoneme:hover {
-  color: grey;
+  color: rgba(255, 255, 255, 0.75);
   cursor: crosshair;
 }
 
 .f-dropdown p {
   text-align: left;
   margin-bottom: 0px;
+  color: #000;
 }
 
 .f-dropdown.content {
@@ -60,4 +61,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b94a6', end
 .main-word {
   font-weight: bold;
   font-size: 4.75rem;
+  color: #FFF;
 }
