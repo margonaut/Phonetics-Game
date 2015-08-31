@@ -8,20 +8,29 @@
   cursor: crosshair;
 }
 
-.f-dropdown li a {
+.f-dropdown p {
   text-align: left;
+  margin-bottom: 0px;
 }
 
 .f-dropdown.content {
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-.f-dropdown:before {
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 .f-dropdown:before {
   border-color:transparent transparent rgba(255, 255, 255, 0.75) transparent;
+}
+
+.button.new-word {
+  background-color: transparent;
+  border: solid 2px #FFF;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.button.new-word:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 body {

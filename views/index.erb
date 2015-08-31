@@ -1,13 +1,17 @@
 <div class="row word-row">
   <div class="text-center columns">
+    <a href="/" class="button new-word">New word</a>
+  </div>
+  <div class="text-center columns">
     <h1 class="main-word"><%= word[:english] %></h1>
   </div>
   <div class="text-center columns">
     <h1 class="main-word">
       [<% phonemes.each_with_index do |character, index| %><a href="#" class="phoneme text-left" data-dropdown="phoneme-info<%= index %>" data-options="is_hover:true; hover_timeout:900400"><%= character["symbol"] %></a><ul id="phoneme-info<%= index %>" class="f-dropdown phoneme-info content" data-dropdown-content>
-        <li><a href="#"><strong>Category:</strong> <%= character["category"].capitalize%></a></li>
-        <li><a href="#"><strong>Place:</strong> <%= character["place"].capitalize%></a></li>
-        <li><a href="#"><strong>Manner:</strong> <%= character["manner"].capitalize%></a></li>
+        <p><strong>Phoneme [<%= character["symbol"]%>]</strong></p>
+        <p><strong>Category:</strong> <%= character["category"].capitalize%></p>
+        <p><strong>Place:</strong> <%= character["place"].capitalize%></p>
+        <p><strong>Manner:</strong> <%= character["manner"].capitalize%></p>
       </ul><% end %>]</h1>
   </div>
 </div>
@@ -20,5 +24,3 @@
 
   </div> -->
 </div>
-
-<p><a href="/">New word</a></p>
