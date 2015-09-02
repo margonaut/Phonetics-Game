@@ -8,6 +8,7 @@
   <div class="text-center columns">
     <h1 class="main-word">
       [<% phonemes.each_with_index do |character, index| %><a href="#" class="phoneme text-left" data-dropdown="phoneme-info<%= index %>" data-options="is_hover:true; hover_timeout:900400"><%= character["symbol"] %></a><ul id="phoneme-info<%= index %>" class="f-dropdown phoneme-info content" data-dropdown-content>
+        <audio id="sound" src="sounds/phoneme<%= character["id"] %>.ogg"></audio>
         <p><strong>Phoneme [<%= character["symbol"]%>]</strong></p>
         <p><strong>Category:</strong> <%= character["category"].capitalize%></p>
         <p><strong>Place:</strong> <%= character["place"].capitalize%></p>
@@ -15,12 +16,4 @@
       </ul><% end %>]</h1>
   </div>
 </div>
-<!-- <div class="row">
-  <div class="small-12 medium-6 columns">
-    Phoneme Info
-    <p>Category: <%= phonemes[1]["category"]%></p>
-    <p></p>
-    <p>Manner: <%= phonemes[1]["manner"]%></p>
-
-  </div> -->
 </div>
