@@ -1,0 +1,29 @@
+<div class="row word-row">
+  <div class="text-center columns">
+    <a href="/" class="button new-word">New word</a>
+  </div>
+  <div class="text-center columns">
+    <input type="text" name="word" id="user-guess">
+  </div>
+  <div class="text-center columns">
+    <h1 class="main-word">
+      [<% phonemes.each_with_index do |character, index| %><a href="#" class="phoneme text-left" data-dropdown="phoneme-info<%= index %>" data-options="is_hover:true; hover_timeout:900400"><%= character["symbol"] %></a><ul id="phoneme-info<%= index %>" class="f-dropdown phoneme-info content" data-dropdown-content>
+        <audio id="sound" src="sounds/phoneme<%= character["id"] %>.ogg"></audio>
+        <p><strong>Phoneme [<%= character["symbol"]%>]</strong></p>
+        <p><strong>Category:</strong> <%= character["category"].capitalize%></p>
+        <p><strong>Place:</strong> <%= character["place"].capitalize%></p>
+        <p><strong>Manner:</strong> <%= character["manner"].capitalize%></p>
+      </ul><% end %>]</h1>
+  </div>
+</div>
+</div>
+
+<script>
+  window.rightWord = "<%= word[:english] %>";
+  $("#user-guess").on('keypress', function(e) {
+    var newChar = String.fromCharCode(e.keyCode);
+    if ($("#user-guess").val() + newChar === window.rightWord) {
+      $("#user-guess").addClass("success");
+    }
+  });
+</script>

@@ -1,4 +1,4 @@
-require 'sinatra'
+require "sinatra"
 require "csv"
 require "pg"
 require "pry"
@@ -46,4 +46,9 @@ get "/" do
   # all_words << random_word
   # binding.pry
   erb :index, locals: { word: word, phonemes: array_of_phonemes(word[:phonetic]) }
+end
+
+get "/practice" do
+  word = random_word
+  erb :practice, locals: { word: word, phonemes: array_of_phonemes(word[:phonetic]) }
 end

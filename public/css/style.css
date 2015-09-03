@@ -63,3 +63,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b94a6', end
   font-size: 4.75rem;
   color: #FFF;
 }
+
+.success {
+  background-color: green !important;
+}
+
+#user-guess {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  background-color: transparent;
+  border: solid #FFF;
+  border-width: 0 0 2px 0;
+  box-shadow: none;
+  font-weight: bold;
+  font-size: 4.75rem;
+  color: #FFF;
+  height: 6.5rem;
+}
