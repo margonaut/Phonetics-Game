@@ -64,8 +64,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b94a6', end
   color: #FFF;
 }
 
+.upper-nav {
+  /*font-weight: bold;*/
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  padding: 0 0 3px 0;
+  margin: 0 0 0 18px;
+  box-shadow: none;
+}
+
+.upper-nav:hover {
+  color: #FFF;
+  background-color: transparent;
+  border-bottom: 1px solid #FFF;
+}
+
 .success {
-  background-color: green !important;
+  background-color: #06A067 !important;
 }
 
 #user-guess {
@@ -80,4 +98,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b94a6', end
   font-size: 4.75rem;
   color: #FFF;
   height: 6.5rem;
+}
+
+.button-container {
+  max-width: none;
+  padding: 15px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgba(255, 255, 255, 0.75);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgba(255, 255, 255, 0.75);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgba(255, 255, 255, 0.75);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgba(255, 255, 255, 0.75);
 }

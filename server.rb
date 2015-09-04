@@ -43,8 +43,6 @@ end
 
 get "/" do
   word = random_word
-  # all_words << random_word
-  # binding.pry
   erb :index, locals: { word: word, phonemes: array_of_phonemes(word[:phonetic]) }
 end
 
