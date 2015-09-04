@@ -82,6 +82,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b94a6', end
   border-bottom: 1px solid #FFF;
 }
 
+/*.upper-nav:active {
+  border-bottom: 1px solid #FFF;
+}*/
+
 .success {
   background-color: #06A067 !important;
 }
@@ -118,4 +122,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b94a6', end
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    rgba(255, 255, 255, 0.75);
+}
+
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+#search-word {
+  background-image: url('/images/search_icon.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 18px 18px;
+  width: 150px;
+}
+
+/**************Fixes*******************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
 }

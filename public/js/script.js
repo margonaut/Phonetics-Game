@@ -1,8 +1,8 @@
 var phonemes = $('a.phoneme');
 
-phonemes.click(play);
+phonemes.click(playSound);
 
-function play() {
+function playSound() {
   var audio = document.getElementById('sound');
   if (audio.paused) {
       audio.play();
