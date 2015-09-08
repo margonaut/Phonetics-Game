@@ -12,8 +12,9 @@
 </head>
 <div class="button-container row">
   <div class="search-wrapper right">
-    <input type="textbox" id="search-word" class="textbox-class upper-nav" name="searchParameter" placeholder="Search Word" onfocus="this.placeholder = ''" />
-    <a class="search-link"  href="search.html"><span class="voice_icon"></span></a>
+    <form action="/word" method="get">
+      <input type="textbox" id="search-word" class="textbox-class upper-nav" name="word" placeholder="Search Word" onfocus="this.placeholder = ''" required/>
+    </form>
   </div>
   <a href="/practice" class="button upper-nav right">Practice</a>
   <a href="/" class="button upper-nav right">Study</a>
